@@ -1,0 +1,38 @@
+
+ 1=> Find out the given number is narcissistic or not return true and false. (Do google for definition for narcissistic)
+
+ 2 => Complete the solution so that it splits the string into pairs of two characters. If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
+
+Examples:
+
+solution('abc') // should return ['ab', 'c_']
+solution('abcdef') // should return ['ab', 'cd', 'ef']
+
+
+3=> Your goal in this is to make and implement a difference function, which subtracts one array from another and returns the result.
+
+It should remove all values from array a, which are present in list b.
+
+arrayDiff([1,2],[1]) ==> [2]
+arrayDiff([3,4],[3]) ==> [4]
+
+
+If a value is present in b, all of its occurrences must be removed from the other:
+
+arrayDiff([1,2,2,2,3],[2]) ==> [1,3]
+
+
+4=> reverse the given array 
+
+var str = [ 'vinit', 'rajesh', 'divyansh']
+var str = [1,2,3,4]
+
+5 => reverse the given string without using function
+
+var strs = 'reverse';
+var strs = '12345'; // 54321
+
+6=> sort the array asscending order without using function
+
+7=> find the maxium/minimum value in array 
+var arr = [2, 5, 10] // max = 10, min =2

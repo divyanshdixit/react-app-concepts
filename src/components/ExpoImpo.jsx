@@ -3,9 +3,7 @@ const secondValue = "Rest are normal export";
 
 function firstName(){
     let firstname = "Divyansh";
-    return (
-        firstname
-    )
+    return firstname;
 }
 
 function lastName(){
@@ -16,4 +14,4 @@ function lastName(){
 // make one default
 export default value;
 
-export {secondValue,firstName, lastName};
+export {secondValue, firstName, lastName};

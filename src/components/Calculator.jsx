@@ -25,4 +25,6 @@ function divide(x,y){
     )
 }
 
+// +, -, /, *, 2**3
+
 export {add, sub, multiply, divide};

@@ -15,11 +15,11 @@ class HttpRequestAxios extends Component {
     }
     
     // all http request will go here after the component will mounted
-    componentDidMount(){ // put, patch, delete ,create
+    componentDidMount(){ // get, post, put, patch, delete ,create, head
 
         axios.get(this.getUri) // return promise
             .then( (response) => {
-                console.log(response)
+                console.log(response) // response is object 
                 this.setState( {
                     data: response.data
                 })

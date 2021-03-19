@@ -4,8 +4,9 @@ import {Link, useParams} from 'react-router-dom';
 import UserView from './UserView';
 
 const UsersLists = () => {
-    let UserIds = [1, 2, 3, 4, 5];   
-    const {id} = useParams();
+    let UserIds = [1, 2, 3, 4, 5];  
+    let names = ['divyansh'];
+    let usernames = ['dixit'] ;
 
     // if(id){
     //     return <UserView/>
@@ -15,8 +16,10 @@ const UsersLists = () => {
             <div>
             <ul>
                 {
-                    UserIds.map( (user) => {
-                        return <li> <Link to={`/users/${user}`}> {user} </Link> </li>
+                    UserIds.map( (user) => { 
+                        {/* return <li> <Link to={`/users/${user}/${names}/${usernames}`}> {`User${user}`} </Link> </li> */}
+                        return <li> <Link to={`/users/${user}`}> {`User${user}`} </Link> </li>
+
                     })
                 }
             </ul>

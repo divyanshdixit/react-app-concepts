@@ -44,7 +44,7 @@ import { UseEffectHookDemo } from './components/UseEffectHookDemo';
 import {one, two, getData} from './components/AdvancedJsCallback';
 import { getPromiseData, promObj, getMultipliedNum } from './components/AdvancedJsPromise';
 // import Route and Switch for client side routing using react-router-dom
-import {BrowserRouter, Route, Switch, useHistory, Redirect} from 'react-router-dom';
+import {Route, Switch, useHistory, Redirect} from 'react-router-dom';
 
 import { About } from './components/About';
 import { Contact } from './components/Contact';
@@ -142,12 +142,13 @@ function App() {
         <Route path='/services' component={Services} />
         <Route exact path='/search' component={Search}/>
         <Route exact path='/users' component={UsersLists}/>
-        <Route path='/users/:id' component={ UserView}/> we can also make other component for viewing single user
+        {/* <Route path='/users/:id/:name/:username' component={ UserView}/> we can also make other component for viewing single user */}
+        <Route path='/users/:id' component={ UserView}/> we can also make other component for viewing single user\
         <Route path='/note' component={NoteProject} />
         
         <Redirect to='/' />
         {/* error page don't have path */}
-        <Route  component={Error404} />
+        <Route component={Error404} />
 
       </Switch>
 
@@ -176,3 +177,4 @@ function menus(value, index, array){
 export default App;
 
 export {Provider, Consumer};
+ 

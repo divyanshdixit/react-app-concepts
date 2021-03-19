@@ -12,7 +12,7 @@ const NavBar = () => {
             <Link to="/contact"> Contact </Link> */}
 
         <br/>
-            {/* we can also use <NavLink> tag so it looks more cool as we can add exta att in it */}
+            {/* we can also use <NavLink> tag so it looks more cool as we can add exta attributes in it */}
 
             <NavLink exact to='/' activeClassName="active"> Home </NavLink>
             <NavLink exact to='/about' activeClassName="active"> About </NavLink>

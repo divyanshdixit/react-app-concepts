@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 import {useHistory, useLocation, useParams} from 'react-router-dom';
 
 const UserView = () => {
-    const {id} = useParams();
-    // console.log(id, name);
-    const location = useLocation();
+    const {id, name, username} = useParams(); // to get the parameters in url
+    console.log(id, name, username);
+    const location = useLocation(); // returns location object that represents current url
     console.log(location);
-    const history = useHistory();
+    const history = useHistory(); // gives access to history instance that we can use to navigate 
     console.log(history);
 
     const clickHandler = () => {

@@ -9,7 +9,7 @@ const CallbackHookParent = () => {
 
     const incrementAge = useCallback(() => {
         setAge(age+1);
-    },[age])
+    },[age])// cache
 
     const incrementSalary = useCallback(() => {
         setSalary(salary+1);
